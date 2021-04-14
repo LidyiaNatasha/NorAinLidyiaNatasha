@@ -69,7 +69,7 @@ public class Fruits {
 	  
 	
 	public double getTotalWeight() {
-		this.totalWeight = this.size * this.weight;
+		this.totalWeight = this.weight;
 		return this.totalWeight;
 	}
 }
