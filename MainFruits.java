@@ -3,7 +3,9 @@ package STIA1123;
 public class MainFruits {
 
 	public static void main(String[] args) {
+				
 		Fruits w = new Fruits();
+		
 		w.setName("Watermelon");
 		w.setColor("Green & Red");
 		w.setTaste("Sweet");

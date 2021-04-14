@@ -1,6 +1,9 @@
 package STIA1123;
+import java.util.*;
 
 public class Fruits {
+	Scanner s = new Scanner(System.in);
+
 	String name;
 	String color;
 	String taste;
@@ -12,27 +15,33 @@ public class Fruits {
 	  
 	 // Create Setter Method
 	  public void setName(String name) {
-	    this.name = name;
+		  System.out.println ("Enter the name :");
+	    this.name = s.nextLine();
 	  }
 	  
 	  public void setColor(String color) {
-		    this.color = color;
+		  System.out.println ("Enter the color :");
+		  this.color = s.nextLine();
 	  }
 	  
 	  public void setTaste(String taste) {
-		    this.taste = taste;
+		  System.out.println ("Enter the taste :");
+		  this.taste = s.nextLine();
 	  }
 	  
 	  public void setJuiceContent(String JuiceContent) {
-		    this.JuiceContent = JuiceContent;
+		  System.out.println ("Enter the Juice Content :");
+		    this.JuiceContent = s.nextLine();
 	  }
 	  
 	  public void setSize(int size) {
-	    this.size = size;
+		  System.out.println ("Enter the size :");
+	    this.size = s.nextInt();
 	  }
 	  
 	  public void setWeight(double weight) {
-		  this.weight = weight;
+		  System.out.println ("Enter the weight :");
+		  this.weight = s.nextDouble();;
 	  }
 
 	  // Create Getter Method
@@ -58,13 +67,9 @@ public class Fruits {
 		  return this.weight;
 	  }
 	  
-	// Create a fullThrottle() method
-	public void fullThrottle() {
-		System.out.println("The fruits are always healthy and unhygienic!");
-	}
-
+	
 	public double getTotalWeight() {
-		
+		this.totalWeight = this.size * this.weight;
 		return this.totalWeight;
 	}
 }
